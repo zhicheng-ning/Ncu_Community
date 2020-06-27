@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#FFFFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            android:gravity="left|center">
+
+            <ImageView
+                android:id="@+id/iv_return"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/fh"
+                android:layout_marginLeft="10dp"
+                android:tint="#000000"
+                />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="设置"
+                android:textSize="17sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginLeft="15dp"
+                android:textColor="#000000"
+                android:lines="1"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="?android:selectableItemBackground"
+        android:padding="12.0dip"
+        android:clickable="true"
+        android:onClick="update"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/shezhiLinearLayout1">
+
+        <ImageView
+            android:layout_width="35.0dip"
+            android:layout_height="35.0dip"
+            android:src="@drawable/about"/>
+
+        <TextView
+            android:textSize="16.0sp"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16.0dip"
+            android:text="关于软件"
+            android:layout_weight="1.0"/>
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/jiantou"
+            android:layout_marginRight="15dp"/>
+
+    </LinearLayout>
+
+<!--    作者信息-->
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="?android:selectableItemBackground"
+        android:padding="12.0dip"
+        android:clickable="true"
+        android:onClick="update"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lr_authorInfo">
+
+        <ImageView
+            android:layout_width="35.0dip"
+            android:layout_height="35.0dip"
+            android:src="@drawable/authorinfo"/>
+
+        <TextView
+            android:textSize="16.0sp"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16.0dip"
+            android:text="作者信息"
+            android:layout_weight="1.0"/>
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/jiantou"
+            android:layout_marginRight="15dp"/>
+
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="退出登录"
+        android:id="@+id/btn_selectimage3"
+        android:textSize="15sp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/yuanjiaobutton"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#FFFFFFFF"/>
+
+</LinearLayout>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/listview_layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="7dp"
+                android:id="@+id/listview_layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_below="@+id/guanliyuanImageView"
+                    android:layout_width="33.0dip"
+                    android:layout_height="33.0dip"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_launcher"
+                    android:layout_centerHorizontal="true"
+                    app:civ_border_width="0.5dip"
+                    app:civ_border_color="#ff4a9bec"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/listfabuCircleImageView1"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/listview_layout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="bottom">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:id="@+id/listview_layout6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="加载中…"
+                            android:textSize="14sp"
+                            android:singleLine="true"
+                            android:textColor="#FF80AC67"
+                            android:id="@+id/listfabuTextView1"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:id="@+id/listview_layout4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="加载中…"
+                            android:singleLine="true"
+                            android:textSize="10sp"
+                            android:gravity="center"
+                            android:layout_marginBottom="0dp"
+                            android:layout_marginTop="0dp"
+                            android:id="@+id/listfabuTextView2"/>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:id="@+id/listview_layout5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right">
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="加载中…"
+                android:singleLine="true"
+                android:textSize="15sp"
+                android:gravity="left"
+                android:maxLines="2"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="#000000"
+                android:layout_marginRight="8dp"
+                android:id="@+id/listfabuTextView3"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:gravity="top"
+                android:autoLink="all"
+                android:maxLines="4"
+                android:layout_marginLeft="8dp"
+                android:text="加载中"
+                android:layout_marginTop="-15dp"
+                android:layout_marginRight="8dp"
+                android:id="@+id/listfabuTextView4"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp">
+
+                <ImageView
+                    android:layout_width="175dp"
+                    android:layout_height="175dp"
+                    android:id="@+id/imageView"
+                    android:scaleType="centerCrop"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right|center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="8dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center"
+                    android:layout_weight="5">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:textSize="10sp"
+                        android:gravity="center"
+                        android:id="@+id/fragmentlist1TextView5"
+                        android:text="浏览量"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:textSize="10sp"
+                        android:gravity="center"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/listfabuTextView6"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center"
+                    android:layout_weight="1.0">
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:tint="#686868"
+                        android:layout_height="18dp"
+                        android:src="@drawable/comment"
+                        android:id="@+id/fragmentlist1ImageView2"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:textSize="10sp"
+                        android:gravity="center"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="20dp"
+                        android:id="@+id/listfabuTextView5"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

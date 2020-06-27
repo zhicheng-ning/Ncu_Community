@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="left|center"
+        android:background="@drawable/yuanjiao"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+            <EditText
+
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:layout_width="wrap_content"
+                android:hint="请输入账号"
+                android:id="@+id/edit_registAccount"
+                android:background="@drawable/edit_choosecity_normal"
+                android:ems="20"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+            <EditText
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:layout_width="wrap_content"
+                android:hint="请输入密码"
+                android:id="@+id/edit_registPwd"
+                android:background="@drawable/edit_choosecity_normal"
+                android:ems="30"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp">
+
+            <EditText
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:layout_width="wrap_content"
+                android:hint="请输入昵称"
+                android:id="@+id/edit_registNickName"
+                android:background="@drawable/edit_choosecity_normal"
+                android:ems="20"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+            <EditText
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:layout_width="wrap_content"
+                android:hint="请输入邮箱"
+                android:id="@+id/edit_registEmail"
+                android:background="@drawable/edit_choosecity_normal"
+                android:ems="20"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+
+            <RadioGroup
+                android:id="@+id/rgroup_sex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                android:gravity="center">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="男"
+                    android:textColor="#B3B3B3"
+                    android:id="@+id/rbtn_male"
+                    android:layout_weight="1.0"
+                    android:layout_marginLeft="70dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="女"
+                    android:textColor="#B3B3B3"
+                    android:id="@+id/rbtn_female"
+                    android:layout_weight="1.0"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="top|center">
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="注册"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:textColor="#FFFFFFFF"
+                android:background="@drawable/yuanjiaobutton"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/btn_submitRegist"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="bottom|center">
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="返回"
+                android:textSize="13sp"
+                android:id="@+id/mainButton2"
+                android:onClick="onReturnClick"
+                android:textColor="#FF8ABD93"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="fill_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center|center_horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginVertical="30dp"
+                android:text="注册即代表阅读并同意协议"
+                android:textColor="#B3B3B3"
+                android:id="@+id/layoutregisterTextView1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

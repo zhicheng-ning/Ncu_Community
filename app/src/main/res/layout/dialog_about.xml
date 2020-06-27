@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<!--      android:elevation="2dp"-->
+<!--    android:layout_marginLeft="15dp"-->
+<!--    android:layout_marginRight="15dp"-->
+<!--    android:layout_marginTop="10dp"-->
+<!--    android:layout_marginBottom="7dp"-->
+    <LinearLayout
+        android:id="@+id/list_itemLinearLayout"
+        android:background="@drawable/yuanjiao4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center"
+        tools:targetApi="lollipop">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="left|center"
+            android:layout_gravity="center">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="20.0dip"
+                android:layout_height="20.0dip"
+                app:civ_border_color="#000000"
+                android:src="@drawable/ncu_community"
+                app:civ_border_width="0dip"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:text="关于软件"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:id="@+id/dialog7TextView1"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:text="软件名称：NCU社区\n软件版本：1.1.1"
+            android:textSize="17sp"
+            android:autoLink="all"
+            android:textColor="#000000"
+            android:id="@+id/dialog7TextView2"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="right|center"
+                android:layout_gravity="center">
+
+                <Button
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_height="39dp"
+                    android:layout_width="wrap_content"
+                    android:text="确定"
+                    android:textSize="13sp"
+                    android:textColor="#FF544F4F"
+                    android:id="@+id/dialog7Button1"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

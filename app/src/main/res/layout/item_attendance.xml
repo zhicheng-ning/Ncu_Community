@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/listview_layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/listview_layout2"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="left|center">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/ziyuanlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:layout_gravity="left">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="加载中"
+                            android:textSize="17sp"
+                            android:singleLine="true"
+                            android:textColor="#FF80AC67"
+                            android:textStyle="bold"
+                            android:id="@+id/layoutkaoqinTextView1"/>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginLeft="10dp">
+
+                            <TextView
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:text="加载中"
+                                android:textSize="13sp"
+                                android:singleLine="true"
+                                android:textColor="#000000"
+                                android:background="?attr/colorAccent"
+                                android:layout_marginLeft="10dp"
+                                android:textStyle="bold"
+                                android:id="@+id/layoutkaoqinTextView2"/>
+
+                            <TextView
+                                android:layout_width="35dp"
+                                android:layout_height="wrap_content"
+                                android:text="加载中…"
+                                android:singleLine="true"
+                                android:textSize="10sp"
+                                android:gravity="center"
+                                android:id="@+id/TextView3"
+                                android:layout_marginBottom="0dp"
+                                android:layout_marginTop="0dp"
+                                android:textColor="#00FFFFFF"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:id="@+id/listview_layout4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:layout_gravity="left">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="打卡时间:"
+                            android:textSize="13sp"
+                            android:singleLine="true"
+                            android:textColor="#FF80AC67"
+                            android:textStyle="normal"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="加载中"
+                            android:singleLine="true"
+                            android:textSize="12sp"
+                            android:gravity="center"
+                            android:layout_marginBottom="0dp"
+                            android:layout_marginTop="0dp"
+
+                            android:id="@+id/layoutkaoqinTextView3"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

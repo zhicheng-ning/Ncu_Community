@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/android:windowBackground"
+    tools:context=".PostTopicActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:fitsSystemWindows="true"
+        android:background="?attr/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="取消"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:id="@+id/tv_cancle"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="发表贴子"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="67dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="发表"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:id="@+id/tv_postTopic"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="top">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp">
+
+            <EditText
+                android:id="@+id/edit_postTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:hint="标题(最多50个字符)"
+                android:gravity="left"
+                android:background="?attr/android:windowBackground"
+                android:paddingLeft="10dp"
+                android:textSize="20sp"/>
+
+        </ScrollView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:text=""
+            android:background="#ffffff"/>
+
+        <EditText
+            android:id="@+id/edit_postTextContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:hint="发表贴子正文"
+            android:gravity="left"
+            android:background="?attr/android:windowBackground"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="7dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:src="@drawable/add1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="10dp"
+                android:scaleType="centerCrop"
+                android:id="@+id/iv_showChosePic"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:dividerPadding="10dp">
+
+        <ImageView
+            android:layout_width="30.0dip"
+            android:layout_height="30.0dip"
+            android:src="@drawable/pic2"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/iv_chosePic"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+

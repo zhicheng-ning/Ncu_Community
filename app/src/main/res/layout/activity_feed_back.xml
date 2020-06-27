@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".FeedBackActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#FFFFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            android:gravity="left|center">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/fh"
+                android:layout_marginLeft="10dp"
+                android:tint="#000000"
+                android:id="@+id/iv_return"/>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="建议"
+                android:textSize="17sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginLeft="15dp"
+                android:textColor="#000000"
+                android:lines="1"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:padding="12dp"
+        android:background="@drawable/yuanjiao2"
+        android:elevation="2dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="反馈"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:id="@+id/bmobfankuiTextInputLayout1">
+
+
+            <EditText
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="反馈内容"
+                android:id="@+id/bmobfankuiEditText1"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+<!--    反馈内容-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+<!--        <com.example.learncommunity.myview.MyListView-->
+<!--            android:id="@+id/comment_list"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:divider="#f4f7f7"-->
+<!--            android:dividerHeight="1dp"-->
+<!--            android:scrollbars="none">-->
+
+<!--        </com.example.learncommunity.myview.MyListView>-->
+<!--    </LinearLayout>-->
+
+
+
+<!--    21-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="20dp"
+        android:src="@drawable/fenxiang"
+        android:elevation="5dp"
+        android:id="@+id/bmobfankuiFloatingActionButton1"
+        tools:targetApi="lollipop" />
+
+</LinearLayout>

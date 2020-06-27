@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top|center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="left"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/yuanjiao"
+        android:layout_margin="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/iv_left"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/bev"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/iv_right"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="right"
+                    android:src="@drawable/bf1" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="45dp"
+            android:gravity="center"
+
+            android:layout_margin="20dp">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="wrap_content"
+                android:text="用户名"
+                android:textSize="17sp"
+                android:layout_marginRight="10dp"/>
+
+            <EditText
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:layout_width="wrap_content"
+                android:ems="20"
+                android:id="@+id/edit_userName"
+                android:background="@drawable/edit_choosecity_normal"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_margin="20dp">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="wrap_content"
+                android:text="密    码"
+                android:textSize="17sp"
+                android:layout_marginRight="10dp"/>
+
+            <EditText
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:layout_width="wrap_content"
+                android:ems="20"
+                android:id="@+id/edit_password"
+                android:background="@drawable/edit_choosecity_normal"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center|center_horizontal">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="记住密码"
+                android:id="@+id/btn_remember"
+                android:checked="false"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="top|center">
+
+            <Button
+
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="登  录"
+                android:textSize="15sp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/btn_login"
+                android:textColor="#FFFFFFFF"
+                android:background="@drawable/yuanjiaobutton"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="bottom|center"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="注册"
+                    android:textSize="13sp"
+                    android:id="@+id/btn_regist"
+                    android:textColor="#FF8ABD93"
+                    android:layout_weight="1.0"/>
+
+                <Button
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="忘记密码"
+                    android:textSize="13sp"
+                    android:textColor="#FF8ABD93"
+                    android:layout_weight="1.0"
+                    android:id="@+id/btn_findPwd"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

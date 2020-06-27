@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF1F1F1"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/rlayout_title"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#FFFFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:lines="1"
+                android:text="交流社区"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swiperlayout_community"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rlayout_title">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ListView
+                android:id="@+id/lv_topic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:dividerHeight="0.6dp"
+                android:listSelector="#00000000">
+
+            </ListView>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fabtn_post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="20dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:elevation="5dp"
+                android:src="@drawable/edit"
+                tools:targetApi="lollipop" />
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+<!--        <android.support.design.widget.CoordinatorLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+<!--            <ListView-->
+<!--                android:id="@+id/lv_topic"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:dividerHeight="0.6dp"-->
+<!--                android:listSelector="#00000000">-->
+
+<!--            </ListView>-->
+
+<!--            <android.support.design.widget.FloatingActionButton-->
+<!--                android:id="@+id/fabtn_post"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="bottom|end"-->
+<!--                android:layout_margin="20dp"-->
+<!--                android:background="?android:attr/selectableItemBackgroundBorderless"-->
+<!--                android:elevation="5dp"-->
+<!--                android:src="@drawable/edit"-->
+<!--                tools:targetApi="lollipop" />-->
+
+<!--        </android.support.design.widget.CoordinatorLayout>-->
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <!--    <androidx.core.widget.SwipeRefreshLayout-->
+    <!--        android:id="@+id/mainSwipeRefreshLayout1"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:layout_below="@id/fg1RelativeLayout1">-->
+
+    <!--        <android.support.design.widget.CoordinatorLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent">-->
+
+    <!--            <ListView-->
+    <!--                android:id="@+id/listpost"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:dividerHeight="0.6dp"-->
+    <!--                android:listSelector="#00000000">-->
+
+    <!--            </ListView>-->
+
+    <!--            <android.support.design.widget.FloatingActionButton-->
+    <!--                android:id="@+id/mainFloatingActionButton1"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_gravity="bottom|end"-->
+    <!--                android:layout_margin="20dp"-->
+    <!--                android:background="?android:attr/selectableItemBackgroundBorderless"-->
+    <!--                android:elevation="5dp"-->
+    <!--                android:src="@drawable/edit" />-->
+
+    <!--        </android.support.design.widget.CoordinatorLayout>-->
+
+    <!--    </androidx.core.widget.SwipeRefreshLayout>-->
+
+    <!--    内容为空时显示如下图片-->
+    <ImageView
+        android:id="@+id/iv_emptyGirl"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/c2l"
+        android:visibility="gone" />
+
+</RelativeLayout>

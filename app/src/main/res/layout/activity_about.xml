@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutActivity"
+    >
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="关于我们"/>
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ncu_community"
+                    android:layout_marginBottom="25dp"/>
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp">
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="应用名称："
+                            android:textSize="20sp"
+                            android:textColor="@android:color/black"/>
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/app_name"
+                            android:textSize="20sp"
+                            android:textColor="@android:color/black"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp">
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="版本号："
+                            android:textSize="20sp"
+                            android:textColor="@android:color/black"/>
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="V 1.1.1"
+                            android:textSize="20sp"
+                            android:textColor="@android:color/black"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp">
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="班级："
+                            android:textSize="20sp"
+                            android:textColor="@android:color/black"/>
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="软工1707"
+                            android:textSize="20sp"
+                            android:textColor="@android:color/black"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp">
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="学号："
+                            android:textSize="20sp"
+                            android:textColor="@android:color/black"/>
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="8002117277  8002117257"
+                            android:textSize="20sp"
+                            android:textColor="@android:color/black"/>
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp">
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="成员："
+                            android:textSize="20sp"
+                            android:textColor="@android:color/black"/>
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="宁志成  陈卓毅"
+                            android:textSize="20sp"
+                            android:textColor="@android:color/black"/>
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp">
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="分工："
+                            android:textSize="20sp"
+                            android:textColor="@android:color/black"/>
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:text="宁志成担任组长，负责云端后台数据库设计，大部分的自定义组件,社区模块(发帖，评论，分享)以及个人中心(签到，反馈，资料设置)的实现
+\n\n陈卓毅主要负责登录，注册，密码邮箱找回，闪屏页，部分自定义Dialog，及UI设计"
+                            android:textSize="18sp"
+                            android:textColor="@android:color/black"/>
+
+                    </TableRow>
+                </TableLayout>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="400dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/author_ningzhicheng"/>
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="400dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/author_chenzhuoyi"/>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <!--    <include-->
+    <!--        android:id="@+id/boot_view"-->
+    <!--        layout="@layout/activity_about"/>-->
+</androidx.constraintlayout.widget.ConstraintLayout>
